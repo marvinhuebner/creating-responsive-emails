@@ -229,7 +229,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide>
           <CodePane
-            lang="scss"
+            lang="js"
             source={codeExamples.foundationForEmails}
             margin="20px auto"
             overflow="overflow"
