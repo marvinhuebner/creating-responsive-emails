@@ -1,0 +1,24 @@
+---
+subject: Panini Example
+---
+
+<container>
+  {{#> image-text
+       img="https://placehold.it/500x400&text=Image%201"
+       buttonText="Read more"
+       buttonHref="http://example.com/"}}
+    <h4>I'm the first headline!</h4>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  {{/image-text}}
+
+  <spacer size="16"></spacer>
+
+  {{#> image-text
+       img="https://placehold.it/500x400&text=Image%202"}}
+    <h4>I'm the second headline!</h4>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+  {{/image-text}}
+</container>

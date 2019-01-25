@@ -1,0 +1,7 @@
+// `gulpfile.babel.js` pages()
+
+.pipe(inky())
+// Replace `{!!` and `{!! ` with `{{`
+.pipe($.replace(/(\\?{!!)(\s+)?/g, '{{'))
+// Replace `!!}` and ` !!}` with `{{`
+.pipe($.replace(/(\s+)?(!!}\\?)/g, '}}'))

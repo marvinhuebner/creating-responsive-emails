@@ -1,0 +1,44 @@
+<table align="center" class="container float-center">
+  <tbody>
+  <tr>
+    <td>
+      <table class="row">
+        <tbody>
+        <tr>
+          <th class="small-12 large-4 columns first">
+            <table>
+              <tr>
+                <th>
+                  <!-- Content -->
+                </th>
+              </tr>
+            </table>
+          </th>
+          <th class="small-12 large-8 columns last">
+            <table>
+              <tr>
+                <th>
+                  <!-- Content -->
+
+                  <table class="button small-expanded">
+                    <tr>
+                      <td>
+                        <table>
+                          <tr>
+                            <td><a href="#"><!-- Content --></a></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+          </th>
+        </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>

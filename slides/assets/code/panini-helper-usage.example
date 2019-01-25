@@ -1,0 +1,5 @@
+{{#bold}} here {{/bold}}
+
+<!-- Outputs to: -->
+
+<strong>here</strong>

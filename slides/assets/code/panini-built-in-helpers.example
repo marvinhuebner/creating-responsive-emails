@@ -1,0 +1,19 @@
+{{#ifpage 'index' 'newsletter'}}
+  <p>This is definitely either the Index or Newsletter Template.</p>
+{{/ifpage}}
+
+{{#unlesspage 'index'}}
+  <p>This is definitely <em>not</em> the Index page.</p>
+{{/unlesspage}}
+
+{{#ifequal foo bar}}
+  <p>foo and bar are equal</p>
+{{else}}
+  <p>foo and bar are not equal}}
+{{/ifequal}}
+
+<ul>
+  {{#repeat 5}}
+    <li>Five hundred ninety-nine US dollars</li>
+  {{/repeat}}
+</ul>

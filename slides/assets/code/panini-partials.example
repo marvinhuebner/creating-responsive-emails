@@ -1,0 +1,12 @@
+// `src/layouts/default.hbs`
+
+<html>
+  <head>
+    <title>Definitely STILL a Website!</title>
+  </head>
+  <body>
+    {{> header}}
+    {{> body}}
+    {{> footer}}
+  </body>
+</html>

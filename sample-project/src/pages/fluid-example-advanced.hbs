@@ -1,0 +1,41 @@
+---
+subject: Fluid Example Advanced
+layout: fluid
+---
+
+<container>
+  <row>
+    <columns>
+      {{#> render-all-form-values}}
+        <f:if condition="{formValue.element.identifier} === 'email-1'">
+          <f:variable name="email" value="{formValue.processedValue}" />
+        </f:if>
+
+        <f:if condition="{formValue.element.identifier} === 'text-1'">
+          <f:variable name="name" value="{formValue.processedValue}" />
+        </f:if>
+      {{/render-all-form-values}}
+
+      <spacer size="16"></spacer>
+      <h3 class="text-center">Please Confirm your Email Address</h3>
+      <spacer size="32"></spacer>
+      <p>
+        <strong>Hey {name}!</strong>
+      </p>
+
+      <p>
+        You're almost ready to start. But first, we just need you to confirm your email address: <a href="mailto:{email}">{email}</a>
+      </p>
+
+      <spacer size="16"></spacer>
+
+      <button href="https://example.com/" target="_blank" class="small-expanded large">
+        Confirm Email Address
+      </button>
+
+      {{> getting-started}}
+    </columns>
+  </row>
+
+  <spacer size="16"></spacer>
+</container>

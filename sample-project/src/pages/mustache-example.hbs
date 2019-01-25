@@ -1,0 +1,42 @@
+---
+subject: Mustache Example
+---
+
+<container>
+  <row>
+    <columns>
+      <h3 class="text-center">Please Confirm your Email Address</h3>
+
+      <!-- This will not work 🚨 -->
+      <p>
+        {{ trans 'You\'re almost ready to start. But first, we just need you to confirm your email address:' }}
+        <a href="mailto:{{ email }}">{{ email }}</a>
+      </p>
+
+      <!-- Solution 1 👎 -->
+      {{{{raw}}}}
+        <p>
+          {{ trans 'You're almost ready to start. But first, we just need you to confirm your email address:' }}
+          <a href="mailto:{{ email }}">{{ email }}</a>
+        </p>
+      {{{{/raw}}}}
+
+
+      <!-- Solution 2 👎 -->
+      <p>
+        {{{{raw}}}} {{ trans 'You're almost ready to start. But first, we just need you to confirm your email address:' }} {{{{/raw}}}}
+        <a href="mailto:{{{{raw}}}}{{ email }}{{{{/raw}}}}">{{{{raw}}}}{{ email }}{{{{/raw}}}}</a>
+      </p>
+
+      <!-- Solution 3  👍 -->
+      <p>
+        {!! trans 'You're almost ready to start. But first, we just need you to confirm your email address:' !!}
+        <a href="mailto:{!! email}}">{!! email !!}</a>
+      </p>
+
+      <button href="{!! store url='$this.getUrl($store,customer/account/confirm/,[_query:[id:$customer.id,key:$customer.confirmation,back_url:$back_url],_nosid:1])' !!}" target="_blank" class="small-expanded large">
+        Confirm Email Address
+      </button>
+    </columns>
+  </row>
+</container>

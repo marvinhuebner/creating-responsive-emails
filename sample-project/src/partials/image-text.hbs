@@ -1,0 +1,12 @@
+<row>
+  <columns small="12" large="4">
+    <img src="{{ img }}" width="171" height="137" alt="Placeholder Image">
+  </columns>
+  <columns small="12" large="8">
+    {{> @partial-block}}
+
+    {{#if buttonText}}
+      <button href="{{ buttonHref }}" class="small-expanded">{{ buttonText }}</button>
+    {{/if }}
+  </columns>
+</row>

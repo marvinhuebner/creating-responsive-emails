@@ -1,0 +1,5 @@
+// `src/helpers/bold.js`
+
+module.exports = function(options) {
+  return `<strong>${options.fn(this)}</strong>`;
+};

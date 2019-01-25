@@ -1,0 +1,10 @@
+// `src/assets/scss/app.scss`
+
+// Overwrite Foundation for Emails defaults
+@import 'settings';
+
+// Import Foundation for Emails from node modules
+@import 'node_modules/foundation-emails/scss/foundation-emails';
+
+// Import own CSS (SCSS)
+@import 'template/template';

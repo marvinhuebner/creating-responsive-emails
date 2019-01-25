@@ -1,0 +1,23 @@
+function pages() {
+  return gulp.src(['src/pages/**/*.hbs', '!src/pages/archive/**/*.hbs'])
+    .pipe(panini({
+      root: 'src/pages',
+      layouts: 'src/layouts',
+      partials: 'src/partials',
+      helpers: 'src/helpers'
+    }))
+    .pipe($.rename(function (path) {
+      path.extname = '.html'
+    }))
+    .pipe(inky())
+    .pipe(gulp.dest('dist'));
+}
+
+function inline() {
+  return gulp.src('dist/**/*.html')
+    .pipe($.if(PRODUCTION, inliner('dist/css/app.css')))
+    .pipe(gulp.dest('dist'));
+}
+
+gulp.task('build',
+  gulp.series(clean, pages, sass, images, inline));
