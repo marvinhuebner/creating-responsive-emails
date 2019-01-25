@@ -10,4 +10,4 @@ Here you can find the slides: https://creating-responsive-emails.netlify.com
 
 ## [Sample Project](https://github.com/marvinhuebner/creating-responsive-emails/tree/master/sample-project)
 
-Sample Project based on [https://github.com/zurb/foundation-emails-template](Foundation for Emails Template)
+Sample Project based on [Foundation for Emails Template](https://github.com/zurb/foundation-emails-template)
