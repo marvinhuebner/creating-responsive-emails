@@ -442,7 +442,7 @@ export default class Presentation extends React.Component {
             Gulp Pages & Inliner Tasks
           </Heading>
           <CodePane
-            lang="scss"
+            lang="js"
             source={codeExamples.gulp}
             margin="20px auto"
             overflow="overflow"
