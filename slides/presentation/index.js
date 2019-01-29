@@ -100,7 +100,7 @@ export default class Presentation extends React.Component {
             <ListItem><strong>Marvin Hübner</strong></ListItem>
             <ListItem>Frontend Developer</ListItem>
             <ListItem>Working at <Link href="https://www.bergwerk.ag/">BERGWERK</Link></ListItem>
-            <ListItem>Member of the <Link href="https://www.t3ughofl.de/">T3UGHOF</Link></ListItem>
+            <ListItem>Member of the <Link href="https://www.t3ughof.de/">T3UGHOF</Link></ListItem>
             <ListItem>&nbsp;</ListItem>
             <ListItem><Link href="https://twitter.com/Marvin_Huebner" target="_blank">https://twitter.com/Marvin_Huebner</Link></ListItem>
             <ListItem><Link href="https://github.com/marvinhuebner" target="_blank">https://github.com/marvinhuebner</Link></ListItem>
